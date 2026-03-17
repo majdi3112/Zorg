@@ -3,15 +3,211 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <title>Energetische Therapie Praktijk</title>
-    <script type="module" crossorigin src="/ZORG/assets/index-Bsg6FXYI.js"></script>
-    <link rel="stylesheet" crossorigin href="/ZORG/assets/index-EzJeajUe.css">
+    <title>Energetische Therapie &amp; Healing</title>
+    <style>
+      :root {
+        --primary: #2563eb;
+        --primary-light: #dbeafe;
+        --accent: #f97316;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+          sans-serif;
+        color: #111827;
+        background: #ffffff;
+        line-height: 1.6;
+      }
+
+      header {
+        background: linear-gradient(
+          135deg,
+          var(--primary-light),
+          #ffffff,
+          #fffbeb
+        );
+        padding: 3rem 1.5rem;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: clamp(2.5rem, 4vw, 3.5rem);
+        margin: 0 0 1rem;
+      }
+
+      header p {
+        max-width: 40rem;
+        margin: 0 auto 2rem;
+        font-size: 1.1rem;
+        color: #4b5563;
+      }
+
+      .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        justify-content: center;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        border-radius: 999px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background-color 0.15s ease, color 0.15s ease,
+          transform 0.15s ease, box-shadow 0.15s ease;
+        font-size: 0.95rem;
+      }
+
+      .btn-primary {
+        background: var(--primary);
+        color: #ffffff;
+        box-shadow: 0 10px 15px rgba(37, 99, 235, 0.25);
+      }
+
+      .btn-primary:hover {
+        background: #1d4ed8;
+        transform: translateY(-1px);
+        box-shadow: 0 15px 25px rgba(37, 99, 235, 0.35);
+      }
+
+      .btn-secondary {
+        background: #ffffff;
+        color: var(--primary);
+        border: 1px solid #d1d5db;
+      }
+
+      .btn-secondary:hover {
+        background: #f9fafb;
+      }
+
+      main {
+        padding: 3rem 1.5rem 4rem;
+        max-width: 64rem;
+        margin: 0 auto;
+      }
+
+      .grid {
+        display: grid;
+        gap: 2.5rem;
+      }
+
+      @media (min-width: 768px) {
+        .grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      h2 {
+        font-size: 1.75rem;
+        margin-bottom: 0.75rem;
+      }
+
+      p {
+        color: #4b5563;
+        margin: 0.5rem 0;
+      }
+
+      section.cta {
+        margin-top: 3rem;
+        padding: 2.5rem 1.75rem;
+        border-radius: 1.5rem;
+        background: var(--primary);
+        color: #e5edff;
+        text-align: center;
+      }
+
+      section.cta h2 {
+        color: #ffffff;
+        margin-top: 0;
+      }
+
+      section.cta p {
+        color: #e5edff;
+      }
+
+      footer {
+        text-align: center;
+        padding: 1.5rem;
+        font-size: 0.85rem;
+        color: #9ca3af;
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <header>
+      <h1>Energetische Therapie &amp; Healing</h1>
+      <p>
+        Ontdek de kracht van energetische therapie en innerlijk werk voor
+        persoonlijke ontwikkeling en heling.
+      </p>
+      <div class="buttons">
+        <a href="#sessies" class="btn btn-primary">Boek 1-op-1 sessie</a>
+        <a href="#workshops" class="btn btn-secondary"
+          >Schrijf je in voor workshop</a
+        >
+        <a href="#online" class="btn btn-secondary">Online sessie</a>
+      </div>
+    </header>
+
+    <main>
+      <div class="grid">
+        <section id="wat-is">
+          <h2>Wat is energetische therapie?</h2>
+          <p>
+            Energetische therapie is een holistische benadering die werkt met de
+            energievelden van het lichaam. Het helpt blokkades op te lossen,
+            balans te herstellen en je natuurlijke helingsvermogen te activeren.
+          </p>
+          <p>
+            Met verschillende technieken werk ik met jouw energie om
+            dieperliggende patronen en emotionele blokkades te transformeren,
+            zodat je meer rust, helderheid en levenskracht kunt ervaren.
+          </p>
+        </section>
+
+        <section id="innerlijk-werk">
+          <h2>Innerlijk werk &amp; persoonlijke ontwikkeling</h2>
+          <p>
+            Persoonlijke ontwikkeling begint bij zelfbewustzijn. In mijn
+            praktijk combineer ik energetische healing met innerlijk werk om je
+            te begeleiden op jouw pad van groei en transformatie.
+          </p>
+          <p>
+            Samen onderzoeken we wat je tegenhoudt, wat je voedt en hoe je meer
+            in verbinding kunt komen met jezelf en je levensdoel.
+          </p>
+        </section>
+      </div>
+
+      <section id="sessies" class="cta">
+        <h2>Klaar om te beginnen?</h2>
+        <p>
+          Neem contact op voor een afspraak of om je in te schrijven voor een
+          workshop.
+        </p>
+        <div class="buttons" style="margin-top: 1.5rem">
+          <a href="mailto:youremail@example.com" class="btn btn-secondary"
+            >Neem contact op</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      &copy; <span id="year"></span> Energetische therapie &amp; healing
+    </footer>
+
+    <script>
+      // Heel klein beetje JS: alleen jaartal invullen
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
 
